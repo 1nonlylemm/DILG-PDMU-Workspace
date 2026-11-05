@@ -1,1 +1,73 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>DILG-PDMU Workspace — Research brief</title><link rel="icon" href="assets/workspace-logo.png" type="image/png"><link rel="stylesheet" href="style.css?v=workspace-20261105"></head><body class="brief-page"><header class="brief-header"><a class="brand" href="./"><img src="assets/workspace-logo.png" alt="DILG PDMU logo" width="42" height="42"><span>DILG-PDMU Workspace<small>Research brief</small></span></a></header><main class="brief-content"><a class="back text-link" href="./">← Back to DILG-PDMU Workspace</a><p class="label eyebrow">RESEARCH BRIEF · NOVEMBER 2026 MANUSCRIPT</p><h1>A Centralized Compliance Monitoring, Evaluation, and Tracking System for LGU Requirement Submissions in DILG Laguna PDMU</h1><p>Luis Mario F. Acovera · Ma. Lena Therese S. Quizon · Mark Andrew Z. Soliman<br>BS Information Technology · College of Computer Studies<br>Laguna State Polytechnic University, Santa Cruz</p><p><strong>Thesis adviser:</strong> Reynalen C. Justo, LPT, DIT</p><button class="button primary" onclick="window.print()">Print / save as PDF</button><h2>Context and objective</h2><p>The study addresses fragmented documentary compliance monitoring through separate Excel files and Google Drive folders in DILG-PDMU Laguna. It aims to design, develop and evaluate an internal web platform that consolidates monitoring across the 30 LGUs in the province.</p><h2>System scope</h2><p>DILG-PDMU Workspace covers compliance monitoring, document intake and review, document uploading and versioning, deadline and notice management, workbook import and mapping, analytics and reporting, archival and communication history, audit trails, OCR/NLP support, a smart assistant and Google Drive regional handoff.</p><h2>Methodology</h2><p>The research uses a descriptive developmental design and Agile development. Its evaluation includes functional testing of core modules and user acceptance evaluation among 36 participants.</p><h2>Results reported in the manuscript</h2><ul><li>147 functional test steps across 13 core modules, with a reported 100% success rate.</li><li>Acceptance grand mean: 4.30 out of 5, interpreted as Highly Acceptable.</li><li>Quality Factors: 4.31; Perceived Ease of Use: 4.33; Attitude Towards Using: 4.38; Behavioral Intention to Use: 4.31. Each is interpreted as Highly Acceptable.</li><li>User Experience: 4.19, interpreted as Acceptable.</li></ul><p>These are study-specific results reported in the supplied manuscript. They do not establish a guarantee of system uptime, security, general model accuracy or future user outcomes.</p><h2>Technology</h2><p>The documented system uses React on the frontend and Flask, SQLAlchemy, Alembic, JWT and Celery on the backend, with PostgreSQL, Redis and document-processing/integration services.</p><h2>Project links</h2><p><a href="https://dilgpdmu.tech">Live application</a> · <a href="https://github.com/1nonlylemm/DILG-PDMU-Workspace">GitHub repository</a></p><aside class="brief-source">This public brief summarizes the supplied Chapters 1–5 manuscript with appendices. It is not the full thesis. The complete document, participant information, signatures and private operational materials are not distributed here.</aside></main></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DILG-PDMU Workspace — Research Brief</title>
+  <meta name="description" content="Research brief for the November 2026 undergraduate study on DILG-PDMU Workspace: A Centralized Compliance Monitoring, Evaluation, and Tracking System for LGU Requirement Submissions in DILG Laguna PDMU.">
+  <link rel="icon" href="assets/workspace-logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css?v=workspace-20261105b">
+</head>
+<body class="brief-page">
+  <header class="brief-header">
+    <a class="brand" href="./">
+      <img src="assets/workspace-logo.png" alt="DILG-PDMU Workspace logo" width="42" height="42">
+      <span>DILG-PDMU Workspace<small>Research brief</small></span>
+    </a>
+  </header>
+  <main class="brief-content">
+    <a class="back text-link" href="./">← Back to DILG-PDMU Workspace</a>
+    <p class="label eyebrow">RESEARCH BRIEF · NOVEMBER 2026 MANUSCRIPT</p>
+    <h1>A Centralized Compliance Monitoring, Evaluation, and Tracking System for LGU Requirement Submissions in DILG Laguna PDMU</h1>
+    <p>
+      Luis Mario F. Acovera (Researcher) · Ma. Lena Therese S. Quizon (Researcher) · Mark Andrew Z. Soliman (Researcher)<br>
+      Bachelor of Science in Information Technology, major in Web and Mobile Application Development<br>
+      College of Computer Studies · Laguna State Polytechnic University, Santa Cruz Campus
+    </p>
+    <p><strong>Thesis adviser:</strong> Reynalen C. Justo, LPT, DIT</p>
+    <button class="button primary" onclick="window.print()">Print / save as PDF</button>
+
+    <h2>Context and objective</h2>
+    <p>The study addresses fragmented documentary compliance monitoring across separate spreadsheets and Google Drive folders in the Project Development and Management Unit (PDMU) of DILG Laguna. The research aims to design, develop, and evaluate an internal web platform that consolidates monitoring across all 30 local government units (LGUs) in the province for infrastructure programs including SGLG-IF, LGSF-SBDP, LGSF-GEF, and LGSF-SAFPB.</p>
+
+    <h2>System scope</h2>
+    <p>DILG-PDMU Workspace covers compliance monitoring, document intake and review, document uploading and versioning, deadline and notice management, workbook import and mapping, analytics and reporting, archival and communication history, audit trails, OCR/NLP support, a smart assistant, and Google Drive regional handoff. The platform serves as an internal operational system for PDMU personnel and municipal/city field officers; LGUs do not hold direct submission accounts, and the workspace complements rather than replaces national progress platforms like SubayBAYAN.</p>
+
+    <h2>Methodology</h2>
+    <p>The research employed a descriptive developmental research design guided by Agile development. The evaluation comprised three complementary components:</p>
+    <ul>
+      <li><strong>Black-box functional testing:</strong> Conducted with 10 external IT professionals across 12 formal test cases (TC-01 to TC-12) covering 13 core modules and 147 test steps.</li>
+      <li><strong>Document matcher experiment:</strong> Evaluated the Qwen-assisted document classifier across 30 test documents subjected to 10 independent evaluation passes (300 total trials).</li>
+      <li><strong>User acceptance evaluation:</strong> Administered a Technology Acceptance Model (TAM) survey to 36 evaluators (6 PDMU personnel and 30 field-side officers across Laguna LGUs) recruited through purposive sampling at three cluster assemblies (Cluster A: Los Baños, Cluster B: Pakil, Cluster C: Pila).</li>
+    </ul>
+
+    <h2>Results reported in the manuscript</h2>
+    <ul>
+      <li><strong>Functional testing:</strong> 147 of 147 functional test steps executed with a 100% pass rate and zero execution defects across all 13 modules.</li>
+      <li><strong>Document matcher experiment:</strong> Achieved 86.33% (259/300) overall exact-slot accuracy (individual passes ranged from 83.33% to 90.00%, with most passes at 86.67%), 89.67% (269/300) requirement-type accuracy, 92.83% (259/279) conditional exact correctness among recommendations, 93.00% coverage with 7.00% (21/300) abstention, 98.15% repeatability agreement (28 of 30 documents identical across all 10 runs), 0 execution failures, and 96.42% micro-precision (0.9292 micro-F1) at the requirement-type level.</li>
+      <li><strong>User acceptance evaluation:</strong> Overall grand mean of 4.30 out of 5.00, interpreted as <em>Highly Acceptable</em>.</li>
+      <li><strong>Acceptance dimensions:</strong>
+        <ul>
+          <li>Quality Factors: 4.31 (Highly Acceptable)</li>
+          <li>Perceived Ease of Use: 4.33 (Highly Acceptable)</li>
+          <li>Attitude Toward Using: 4.38 (Highly Acceptable)</li>
+          <li>Behavioral Intention to Use: 4.31 (Highly Acceptable)</li>
+          <li>User Experience: 4.19 (Acceptable)</li>
+        </ul>
+      </li>
+      <li><strong>Key indicator:</strong> The item <em>"Using the system is a good improvement compared to using fragmented systems for monitoring"</em> scored the highest among attitude indicators with a weighted mean of 4.42.</li>
+    </ul>
+    <p>These findings represent the specific evaluation results documented in the November 2026 manuscript. They do not constitute an operational guarantee of uptime, general machine learning generalization beyond tested distributions, or external network availability.</p>
+
+    <h2>Technology</h2>
+    <p>The documented system architecture uses React, Vite, and React Router on the frontend; Flask, SQLAlchemy, Alembic, JWT, and Celery on the backend; PostgreSQL 15 for data persistence; WeasyPrint and docxtpl for document processing; and Brevo SMTP, Google Drive, and Gemini for external integrations.</p>
+
+    <h2>Access note</h2>
+    <p>The deployed web application at <a href="https://dilgpdmu.tech" target="_blank" rel="noopener noreferrer">dilgpdmu.tech</a> is an internal operational tool. Application features require an authorized account issued to DILG Laguna personnel.</p>
+
+    <aside class="brief-source">
+      This public brief summarizes the supplied Chapters 1–5 undergraduate manuscript. It is not the full thesis. The complete document, participant identifying data, institutional signatures, and private operational records are not distributed here.
+    </aside>
+  </main>
+</body>
+</html>
